@@ -1,0 +1,141 @@
+
+; <<>> DiG 9.1.3 <<>> @127.0.0.1 -p53 nathan.ax A
+;; global options:  printcmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 57577
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 1, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;nathan.ax.			IN	A
+
+;; ANSWER SECTION:
+nathan.ax.		1	IN	A	192.168.10.4
+nathan.ax.		1	IN	A	192.168.10.5
+
+;; AUTHORITY SECTION:
+nathan.ax.		1	IN	NS	nathan.ax.
+
+;; Query time: 1 msec
+;; SERVER: 127.0.0.1#53(127.0.0.1)
+;; WHEN: Thu Aug 15 15:20:18 2002
+;; MSG SIZE  rcvd: 73
+
+
+; <<>> DiG 9.1.3 <<>> @127.0.0.1 -p53 xx.nathan.ax CNAME
+;; global options:  printcmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 12849
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 2
+
+;; QUESTION SECTION:
+;xx.nathan.ax.			IN	CNAME
+
+;; ANSWER SECTION:
+xx.nathan.ax.		1	IN	CNAME	nathan.ax.
+
+;; AUTHORITY SECTION:
+nathan.ax.		1	IN	NS	nathan.ax.
+
+;; ADDITIONAL SECTION:
+nathan.ax.		1	IN	A	192.168.10.5
+nathan.ax.		1	IN	A	192.168.10.4
+
+;; Query time: 1 msec
+;; SERVER: 127.0.0.1#53(127.0.0.1)
+;; WHEN: Thu Aug 15 15:20:18 2002
+;; MSG SIZE  rcvd: 90
+
+
+; <<>> DiG 9.1.3 <<>> @127.0.0.1 -p53 nathan.ax NS
+;; global options:  printcmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 38605
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 2
+
+;; QUESTION SECTION:
+;nathan.ax.			IN	NS
+
+;; ANSWER SECTION:
+nathan.ax.		1	IN	NS	nathan.ax.
+
+;; ADDITIONAL SECTION:
+nathan.ax.		1	IN	A	192.168.10.5
+nathan.ax.		1	IN	A	192.168.10.4
+
+;; Query time: 11 msec
+;; SERVER: 127.0.0.1#53(127.0.0.1)
+;; WHEN: Thu Aug 15 15:20:18 2002
+;; MSG SIZE  rcvd: 73
+
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 9177
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 2
+
+;; QUESTION SECTION:
+;4.10.168.192.in-addr.arpa.	IN	PTR
+
+;; ANSWER SECTION:
+4.10.168.192.in-addr.arpa. 1	IN	PTR	nathan.ax.
+
+;; AUTHORITY SECTION:
+10.168.192.in-addr.arpa. 1	IN	NS	nathan.ax.
+
+;; ADDITIONAL SECTION:
+nathan.ax.		1	IN	A	192.168.10.4
+nathan.ax.		1	IN	A	192.168.10.5
+
+;; Query time: 1 msec
+;; SERVER: 127.0.0.1#53(127.0.0.1)
+;; WHEN: Thu Aug 15 15:20:18 2002
+;; MSG SIZE  rcvd: 112
+
+
+; <<>> DiG 9.1.3 <<>> @127.0.0.1 -p53 nathan.ax SOA
+;; global options:  printcmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 64429
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 2
+
+;; QUESTION SECTION:
+;nathan.ax.			IN	SOA
+
+;; ANSWER SECTION:
+nathan.ax.		1	IN	SOA	nathan.ax. root.nathan.ax. 33 2 2 2 2
+
+;; AUTHORITY SECTION:
+nathan.ax.		1	IN	NS	nathan.ax.
+
+;; ADDITIONAL SECTION:
+nathan.ax.		1	IN	A	192.168.10.4
+nathan.ax.		1	IN	A	192.168.10.5
+
+;; Query time: 3 msec
+;; SERVER: 127.0.0.1#53(127.0.0.1)
+;; WHEN: Thu Aug 15 15:20:18 2002
+;; MSG SIZE  rcvd: 114
+
+
+; <<>> DiG 9.1.3 <<>> @127.0.0.1 -p53 nathan.ax MX
+;; global options:  printcmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 32861
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 2
+
+;; QUESTION SECTION:
+;nathan.ax.			IN	MX
+
+;; ANSWER SECTION:
+nathan.ax.		1	IN	MX	10 nathan.ax.
+
+;; AUTHORITY SECTION:
+nathan.ax.		1	IN	NS	nathan.ax.
+
+;; ADDITIONAL SECTION:
+nathan.ax.		1	IN	A	192.168.10.5
+nathan.ax.		1	IN	A	192.168.10.4
+
+;; Query time: 1 msec
+;; SERVER: 127.0.0.1#53(127.0.0.1)
+;; WHEN: Thu Aug 15 15:20:18 2002
+;; MSG SIZE  rcvd: 89
+

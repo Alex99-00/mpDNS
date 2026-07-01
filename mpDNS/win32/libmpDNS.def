@@ -1,0 +1,17 @@
+LIBRARY		LIBMPDNS
+DESCRIPTION	'Multi Platform DNS Library'
+VERSION		1.0
+EXPORTS
+	iniDNSlib
+	deIniDNSlib
+	processDNSquery
+	getUdpServerSocket
+	getUdpClientSocket
+	closeUdpSocket
+	readUdp
+	writeUdp
+	genSockaddressStruct
+	lastErrorMsg
+	MALLOC
+	FREE
+	REALLOC

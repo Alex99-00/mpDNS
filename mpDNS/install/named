@@ -1,0 +1,46 @@
+#! /bin/sh
+#
+#
+# Copyright (c) 2002 by Alexander Klupsch (ax)
+# based on:
+#
+# Copyright (c) 2k1 by "tseiman" Thomas Schmidt
+# based on:
+#
+# Copyright (c) 1996 S.u.S.E. Gmbh Fuerth, Germany.  All rights reserved.
+# Author: Florian La Roche <florian@suse.de>, 1996
+#
+
+. /etc/rc.config
+
+base=${0##*/}
+link=${base#*[SK][0-9][0-9]}
+
+test $link = $base && START_NAMED=yes
+test "$START_NAMED" = yes || exit 0
+
+return=$rc_done
+case "$1" in
+    start)
+	echo -n "Starting name server."
+	startproc /usr/sbin/mpDNS || return=$rc_failed
+	echo -e "$return"
+	;;
+    stop)
+	echo -n "Shutting down name server:"
+	killproc -TERM /usr/sbin/mpDNS || return=$rc_failed
+	echo -e "$return"
+	;;
+    restart|reload)
+	$0 stop && $0 start || return=$rc_failed
+	;;
+    status)
+	checkproc /usr/sbin/mpDNS && echo OK || echo No process
+	;;
+    *)
+	echo "Usage: $0 {start|stop|restart|reload|status}"
+	exit 1
+esac
+
+test "$return" = "$rc_done" || exit 1
+exit 0

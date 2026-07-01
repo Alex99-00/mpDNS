@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+#
+# "run.sh 10" -> 10 times the test
+#
+
+echo " " > run.out
+
+i=0
+while ( [ $i -ne $1 ] ) do
+        dig @127.0.0.1 -p53 nathan.ax A 1>>run.out.bind &
+        dig @127.0.0.1 -p53 nathan.ax NS 1>>run.out.bind &
+        dig @127.0.0.1 -p53 xx.nathan.ax CNAME 1>>run.out.bind &
+        dig @127.0.0.1 -p53 -x 192.168.10.4 1>>run.out.bind &
+        dig @127.0.0.1 -p53 nathan.ax SOA 1>>run.out.bind &
+        dig @127.0.0.1 -p53 nathan.ax MX 1>>run.out.bind &
+        i=$[$i+1]
+        echo "$i"
+done

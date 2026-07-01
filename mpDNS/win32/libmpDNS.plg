@@ -1,0 +1,107 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: libmpDNS - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\WINDOWS\TEMP\RSP61C5.TMP" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "." /I ".\..\mpDNSlib\include" /I ".\mysql\include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBMPDNS_EXPORTS" /Fp"Release/libmpDNS.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\c\mpDNS\mpDNSlib\src\memory\alloc.c"
+"D:\c\mpDNS\mpDNSlib\src\config\configparser.c"
+"D:\c\mpDNS\mpDNSlib\src\db\db.c"
+"D:\c\mpDNS\mpDNSlib\src\debug\debug.c"
+"D:\c\mpDNS\mpDNSlib\src\dns\dns.c"
+"D:\c\mpDNS\mpDNSlib\src\error\error.c"
+"D:\c\mpDNS\mpDNSlib\src\db\mpdnsmysql.c"
+"D:\c\mpDNS\mpDNSlib\src\queue\queue.c"
+"D:\c\mpDNS\mpDNSlib\src\net\udp.c"
+]
+Creating command line "cl.exe @D:\WINDOWS\TEMP\RSP61C5.TMP" 
+Creating temporary file "D:\WINDOWS\TEMP\RSP61C6.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ws2_32.lib ./mysql/lib/opt/mysqlclient.lib /nologo /dll /incremental:no /pdb:"Release/libmpDNS.pdb" /machine:I386 /def:".\libmpDNS.def" /out:"Release/libmpDNS.dll" /implib:"Release/libmpDNS.lib" 
+.\Release\alloc.obj
+.\Release\configparser.obj
+.\Release\db.obj
+.\Release\debug.obj
+.\Release\dns.obj
+.\Release\error.obj
+.\Release\mpdnsmysql.obj
+.\Release\queue.obj
+.\Release\udp.obj
+]
+Creating command line "link.exe @D:\WINDOWS\TEMP\RSP61C6.TMP"
+<h3>Output Window</h3>
+Compiling...
+alloc.c
+configparser.c
+db.c
+debug.c
+dns.c
+error.c
+mpdnsmysql.c
+queue.c
+udp.c
+Linking...
+   Creating library Release/libmpDNS.lib and object Release/libmpDNS.exp
+
+
+
+<h3>Results</h3>
+libmpDNS.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: libmpDNS - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\WINDOWS\TEMP\RSP6225.TMP" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "." /I ".\..\mpDNSlib\include" /I ".\mysql\include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBMPDNS_EXPORTS" /Fp"Debug/libmpDNS.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\c\mpDNS\mpDNSlib\src\memory\alloc.c"
+"D:\c\mpDNS\mpDNSlib\src\config\configparser.c"
+"D:\c\mpDNS\mpDNSlib\src\db\db.c"
+"D:\c\mpDNS\mpDNSlib\src\debug\debug.c"
+"D:\c\mpDNS\mpDNSlib\src\dns\dns.c"
+"D:\c\mpDNS\mpDNSlib\src\error\error.c"
+"D:\c\mpDNS\mpDNSlib\src\db\mpdnsmysql.c"
+"D:\c\mpDNS\mpDNSlib\src\queue\queue.c"
+"D:\c\mpDNS\mpDNSlib\src\net\udp.c"
+]
+Creating command line "cl.exe @D:\WINDOWS\TEMP\RSP6225.TMP" 
+Creating temporary file "D:\WINDOWS\TEMP\RSP6226.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ws2_32.lib ./mysql/lib/debug/mysqlclient.lib /nologo /dll /incremental:yes /pdb:"Debug/libmpDNS.pdb" /debug /machine:I386 /def:".\libmpDNS.def" /out:"Debug/libmpDNS.dll" /implib:"Debug/libmpDNS.lib" /pdbtype:sept 
+.\Debug\alloc.obj
+.\Debug\configparser.obj
+.\Debug\db.obj
+.\Debug\debug.obj
+.\Debug\dns.obj
+.\Debug\error.obj
+.\Debug\mpdnsmysql.obj
+.\Debug\queue.obj
+.\Debug\udp.obj
+]
+Creating command line "link.exe @D:\WINDOWS\TEMP\RSP6226.TMP"
+<h3>Output Window</h3>
+Compiling...
+alloc.c
+configparser.c
+db.c
+debug.c
+dns.c
+error.c
+mpdnsmysql.c
+queue.c
+udp.c
+Linking...
+   Creating library Debug/libmpDNS.lib and object Debug/libmpDNS.exp
+
+
+
+<h3>Results</h3>
+libmpDNS.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
