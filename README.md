@@ -17,4 +17,7 @@ For example:
 
 A good example of how time can render a codebase unusable.
 
+# Known errors
+This version may have an error with PTR requests ;)
+
 License is GPL v3.0
